@@ -1,5 +1,6 @@
 from flask import Flask
 from routes.user_router import auth_bp , cache
+from flask_caching import Cache
 from routes.request_router import request_bp
 from routes.post_router import post_bp
 from routes.comment_router import comment_bp
@@ -16,7 +17,7 @@ from routes.events import socketio
 
 app = Flask(__name__)
 
-JWTManager(app)
+jwt = JWTManager(app)
 
 cache.init_app(app)
 socketio.init_app(app)

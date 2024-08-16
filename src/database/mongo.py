@@ -8,7 +8,7 @@ from .models.room_model import schema as rooms_schema
 from .models.message_model import schema as messages_schema
 from utils.constants import CONNECTED_TO_MONGODB, CONNECTION_FAILED
 
-MONGO_CONNECTION_STRING = 'mongodb+srv://aditya:aditya2004@cluster0.lgjqzvz.mongodb.net/'
+MONGO_CONNECTION_STRING = 'mongodb+srv://husseinokla:Hma81200400@cluster0.uxmim.mongodb.net/'
 
 def create_collection(database, collection_name, schema):
     if collection_name in database.list_collection_names():
